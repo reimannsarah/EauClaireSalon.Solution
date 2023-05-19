@@ -9,7 +9,7 @@
 @using (Html.BeginForm())
 {
   @Html.HiddenFor(model => model.StylistId)
-  <input type="submit" value="Delete" />
+  <input class="btn" type="submit" value="Delete" />
 }
 
-<p>@Html.ActionLink("Home","Index","Home")</p>
+<p>@Html.ActionLink("Home","Index","Home", null, new { @class = "btn" })</p>
