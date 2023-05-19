@@ -56,19 +56,19 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-//     public ActionResult Delete(int id)
-//     {
-//       // Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-//       return View(thisCategory);
-//     }
+    public ActionResult Delete(int id)
+    {
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.Id == id);
+      return View(thisStylist);
+    }
 
-//     [HttpPost, ActionName("Delete")]
-//     public ActionResult DeleteConfirmed(int id)
-//     {
-//       // Category thisCategory = _db.Categories.FirstOrDefault(category => category.CategoryId == id);
-//       // _db.Categories.Remove(thisCategory);
-//       // _db.SaveChanges();
-//       return RedirectToAction("Index");
-//     }
+    [HttpPost, ActionName("Delete")]
+    public ActionResult DeleteConfirmed(int id)
+    {
+      Stylist thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.Id == id);
+      _db.Stylists.Remove(thisStylist);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
+    }
   }
 }
