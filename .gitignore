@@ -2,4 +2,5 @@ obj
 bin
 appsettings.json
 .vscode
+.DS_Store
 
