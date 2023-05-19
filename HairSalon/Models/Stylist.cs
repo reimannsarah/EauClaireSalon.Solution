@@ -8,7 +8,7 @@ namespace HairSalon.Models
     public int Id { get; set; }
     public string Name { get; set; }
     public string Specialty { get; set; }
-    public DateOnly HireDate { get; set; }
+    // public DateTime HireDate { get; set; }
     public List<Client> Clients { get; set; }
   }
 }
