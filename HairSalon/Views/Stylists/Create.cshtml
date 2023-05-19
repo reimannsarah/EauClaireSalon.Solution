@@ -3,13 +3,14 @@
 }
 
 @model HairSalon.Models.Stylist
+@using HairSalon.Models
 
 @using(Html.BeginForm())
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
   @Html.LabelFor(model => model.Specialty)
-  @Html.TextBoxFor(model => model.Specialty)
+  @Html.DropDownListFor(model => model.Specialty, new SelectList(Enum.GetValues(typeof(SpecialtyService))), "Select Specialty")
   @* @Html.LabelFor(model => model.HireDate)
   @Html.DatePickerFor(model => model.HireDate) *@
   <input type ="submit" value="Add">

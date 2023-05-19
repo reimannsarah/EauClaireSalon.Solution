@@ -11,4 +11,11 @@ namespace HairSalon.Models
     // public DateTime HireDate { get; set; }
     public List<Client> Clients { get; set; }
   }
+
+  public enum SpecialtyService
+  {
+    Cut,
+    Color,
+    CutAndColor
+  }
 }
