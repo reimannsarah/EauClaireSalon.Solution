@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Client
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownListFor(model => model.StylistId, ViewBag.StylistList as SelectList, "Select a Stylist", new { @class ="form-control" })
+  <input type="submit", value="Submit" />
+}
