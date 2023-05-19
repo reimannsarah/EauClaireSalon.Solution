@@ -40,7 +40,7 @@ Using the `sarah_reimann.sql` file located at the top level of this repo, export
   }
 }
 ```
-![alt text](wwwroot/imgs/SQLDesigner.png)
+![photo of SQL designer](./wwwroot/imgs/SQLDesigner.png)
 
 ## Below is a rendering of the table relationships
 
