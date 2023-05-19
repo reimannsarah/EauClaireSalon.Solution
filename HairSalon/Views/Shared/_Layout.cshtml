@@ -10,11 +10,10 @@
 </head>
 
 <body>
+  @await Html.PartialAsync("Header")
+  @await Html.PartialAsync("NavBar")
   @RenderBody()
   @await Html.PartialAsync("Footer")
-  <p>@Html.ActionLink("View Stylists", "Index", "Stylists")</p>
-  <p>@Html.ActionLink("View Clients", "Index", "Clients")</p>
-  <p>@Html.ActionLink("Home","Index","Home")</p>
 </body>
 
 </html>

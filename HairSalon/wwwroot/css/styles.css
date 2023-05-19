@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+:root {
+  --lightBlue: #C1DFF0;
+  --babyBlue: #88CCF1;
+  --darkBlue: #3587A4;
+  --teal: #2D848A;
+  --rose: #BC9CB0;
+}
+
+body {
+  font-family: Quicksand, monospace;
+  background-color: var(--lightBlue);
+}
+
+#headerH1 {
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--darkBlue);
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.navbar > p > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar > p {
+  margin-bottom: 0;
+}
